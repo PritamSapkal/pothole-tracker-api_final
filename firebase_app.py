@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Initialize Firebase
-cred = credentials.Certificate("C:\\Users\\prita\\OneDrive\\Desktop\\pthhole_tracker\\SERVER_AND_MAP_CODE\\potholes-tracker-6de66-firebase-adminsdk-fbsvc-88d9710f35.json")  # Update with your Firebase JSON key
+cred = credentials.Certificate("potholes-tracker-6de66-firebase-adminsdk-fbsvc-88d9710f35.json")  # Update with your Firebase JSON key
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
